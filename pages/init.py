@@ -84,6 +84,69 @@ def initial(conn, dummy=False):
         '''
     )
 
+    cursor.execute(
+        '''
+        CREATE INDEX idx_members_name
+            ON members(name);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_books_title
+            ON books(title);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_books_author
+            ON books(author);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_borrowings_member
+            ON borrowings(member);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_borrowings_book_id
+            ON borrowings(book_id);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_penalties_bid
+            ON penalties(bid);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_reviews_member
+            ON reviews(member);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_reviews_book_id
+            ON reviews(book_id);
+        '''
+    )
+
+    cursor.execute(
+        '''
+        CREATE INDEX idx_reviews_rating
+            ON reviews(rating);
+        '''
+    )
+
     connection.commit()
 
     if dummy:

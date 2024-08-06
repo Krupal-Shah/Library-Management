@@ -39,7 +39,7 @@ def main(**kwargs):
     
     # Check if data is available in the database
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-    connection.commit()
+    connection.commit() 
     if cursor.fetchall() == []:
         init.initial(connection, dummy)   # Make True for test purposes.
 
