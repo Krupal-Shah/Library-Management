@@ -19,6 +19,7 @@ This is a simple library management system that is implemented using python and 
 2. Ensure that there is a database file as it will be asked when the program is run. If the file does not exist, a `dummy.db` file is present in the repository which can be used. 
 3. Run the program using the command `python main.py`
     1. You can also give it the argument 'dummy' to add random data to the database. `python main.py dummy`
+4. If the database has no tables in it, the program will automatically generate the required tables with proper indexes.
 4. Follow the instructions on the screen
 
 ## Contributing
