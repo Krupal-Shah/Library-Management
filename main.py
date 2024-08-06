@@ -7,6 +7,7 @@ import pages.returnBook as returnBook
 import pages.search as search
 import sqlite3
 import os
+import sys
 import getpass
 
 ### Creating the connection with database ###
@@ -22,7 +23,8 @@ def connect(path):
     return
 
 ### Main ###
-def main():
+def main(**kwargs):
+    dummy = False if 'dummy' not in kwargs else True
     # Connect to the database
     global connection, cursor
 
@@ -39,8 +41,8 @@ def main():
     cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
     connection.commit()
     if cursor.fetchall() == []:
-        init.initial(dummy=False)   # Make True for test purposes.
-        
+        init.initial(connection, dummy)   # Make True for test purposes.
+
     # Login
     loggedIn = False
     while not loggedIn:

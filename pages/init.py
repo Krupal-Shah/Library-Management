@@ -90,9 +90,9 @@ def initial(conn, dummy=False):
         cursor.execute(
             '''
             INSERT INTO members VALUES
-                ("student1@ualberta.ca", "0808", "Nick", 2004, "CS"),
-                ("student2@ualberta.ca", "1818", "Sarah", 2004, "CS"),
-                ("student3@ualberta.ca", "2828", "Charlie", 2004, "Math");
+                ("student1@gmail.ca", "0808", "Nick", 2004, "CS"),
+                ("student2@gmail.ca", "1818", "Sarah", 2004, "CS"),
+                ("student3@gmail.ca", "2828", "Charlie", 2004, "Math");
             '''
         )
 
@@ -119,14 +119,14 @@ def initial(conn, dummy=False):
         cursor.execute(
             '''
             INSERT INTO borrowings VALUES
-                (1, "student1@ualberta.ca", 1, "2023-11-15", "2023-12-15"),
-                (2, "student1@ualberta.ca", 2, "2023-10-15", "2024-01-15"),
-                (3, "student1@ualberta.ca", 5, "2024-03-15", NULL),
-                (4, "student1@ualberta.ca", 7, "2024-01-01", NULL), 
-                (5, "student1@ualberta.ca", 8, "2023-12-10", NULL), 
-                (6, "student2@ualberta.ca", 9, "2024-02-29", NULL), 
-                (7, "student2@ualberta.ca", 13, "2024-02-01", NULL), 
-                (8, "student2@ualberta.ca", 1, "2023-12-16", "2024-01-15");
+                (1, "student1@gmail.ca", 1, "2023-11-15", "2023-12-15"),
+                (2, "student1@gmail.ca", 2, "2023-10-15", "2024-01-15"),
+                (3, "student1@gmail.ca", 5, "2024-03-15", NULL),
+                (4, "student1@gmail.ca", 7, "2024-01-01", NULL), 
+                (5, "student1@gmail.ca", 8, "2023-12-10", NULL), 
+                (6, "student2@gmail.ca", 9, "2024-02-29", NULL), 
+                (7, "student2@gmail.ca", 13, "2024-02-01", NULL), 
+                (8, "student2@gmail.ca", 1, "2023-12-16", "2024-01-15");
             '''
         )
 
@@ -146,18 +146,18 @@ def initial(conn, dummy=False):
         cursor.execute(
             '''
             INSERT INTO reviews VALUES
-                (1, 2, "student1@ualberta.ca", 3, "Great!", "2023-12-15"),
-                (2, 2, "student2@ualberta.ca", 4, "Amazing!", "2023-11-15"), 
-                (3, 6, "student3@ualberta.ca", 5, "Wow!", "2023-10-15"), 
-                (4, 3, "student1@ualberta.ca", 4, "I love this book!", "2023-07-08"), 
-                (5, 3, "student1@ualberta.ca", 4, "OMG", "2023-04-22"), 
-                (6, 3, "student3@ualberta.ca", 5, "The book's setting is pure magic, immersing readers in a captivating world.", "2023-11-03"), 
-                (7, 4, "student1@ualberta.ca", 3, "So good!", "2022-02-28"), 
-                (8, 10, "student1@ualberta.ca", 3, " The setting serves as a magical gateway, transporting readers to a vivid and memorable world.", "2022-11-04"),
-                (9, 10, "student3@ualberta.ca", 4, "I love this book!", "2022-05-08"),
-                (10, 10, "student3@ualberta.ca", 5, "Cool", "2022-04-10"), 
-                (11, 9, "student2@ualberta.ca", 4, "Lol", "2022-02-28"), 
-                (12, 9, "student2@ualberta.ca", 2, "I don't like it at all!", "2022-12-19");
+                (1, 2, "student1@gmail.ca", 3, "Great!", "2023-12-15"),
+                (2, 2, "student2@gmail.ca", 4, "Amazing!", "2023-11-15"), 
+                (3, 6, "student3@gmail.ca", 5, "Wow!", "2023-10-15"), 
+                (4, 3, "student1@gmail.ca", 4, "I love this book!", "2023-07-08"), 
+                (5, 3, "student1@gmail.ca", 4, "OMG", "2023-04-22"), 
+                (6, 3, "student3@gmail.ca", 5, "The book's setting is pure magic, immersing readers in a captivating world.", "2023-11-03"), 
+                (7, 4, "student1@gmail.ca", 3, "So good!", "2022-02-28"), 
+                (8, 10, "student1@gmail.ca", 3, " The setting serves as a magical gateway, transporting readers to a vivid and memorable world.", "2022-11-04"),
+                (9, 10, "student3@gmail.ca", 4, "I love this book!", "2022-05-08"),
+                (10, 10, "student3@gmail.ca", 5, "Cool", "2022-04-10"), 
+                (11, 9, "student2@gmail.ca", 4, "Lol", "2022-02-28"), 
+                (12, 9, "student2@gmail.ca", 2, "I don't like it at all!", "2022-12-19");
             '''
         )
 
