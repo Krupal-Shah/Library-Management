@@ -2,6 +2,7 @@ connection = None
 cursor = None
 
 def initial(conn, dummy=False):
+    print(dummy)
     global cursor, connection
     connection = conn
     cursor = conn.cursor()

@@ -23,8 +23,9 @@ def connect(path):
     return
 
 ### Main ###
-def main(**kwargs):
-    dummy = False if 'dummy' not in kwargs else True
+def main(argv):
+    # Check if the user is a dummy user
+    dummy = False if 'dummy' not in argv else True
     # Connect to the database
     global connection, cursor
 
@@ -107,4 +108,4 @@ def main(**kwargs):
     return
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])
