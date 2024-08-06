@@ -21,12 +21,12 @@ This is a simple library management system that is implemented using python and 
     1. You can also give it the argument 'dummy' to add random data to the database. `python main.py dummy`
 4. If the database has no tables in it, the program will automatically generate the required tables with proper indexes.
     1. The following indexes are created:
-        Index on members(name): Helps with searching members by name.
-        Index on books(title) and books(author): Improves search performance for books by title or author.
-        Index on borrowings(member) and borrowings(book_id): Speeds up searches for borrowings by member or book.
-        Index on penalties(bid): Optimizes lookups for penalties associated with a borrowing.
-        Index on reviews(member) and reviews(book_id): Facilitates fast retrieval of reviews by member or book.
-        Index on reviews(rating): Allows efficient querying based on rating values.
+        1. Index on members(name): Helps with searching members by name.
+        2. Index on books(title) and books(author): Improves search performance for books by title or author.
+        3. Index on borrowings(member) and borrowings(book_id): Speeds up searches for borrowings by member or book.
+        4. Index on penalties(bid): Optimizes lookups for penalties associated with a borrowing.
+        5. Index on reviews(member) and reviews(book_id): Facilitates fast retrieval of reviews by member or book.
+        6. Index on reviews(rating): Allows efficient querying based on rating values.
 5. Follow the instructions in the command line.
 
 ## Contributing
